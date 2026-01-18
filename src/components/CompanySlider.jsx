@@ -78,19 +78,13 @@ const CompanySlider = () => {
       </div>
 
       <div className="max-w-6xl mx-auto relative flex items-center justify-center">
-        
-        {/* Leva strelica */}
         <button 
           onClick={prevSlide}
           className="absolute left-[-20px] md:left-0 z-10 bg-emerald-400 p-3 rounded-full text-white hover:bg-emerald-500 transition-all shadow-lg hover:scale-110 active:scale-95"
         >
           <ChevronLeft size={28} />
         </button>
-
-        {/* Glavna Kartica */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 w-full max-w-4xl flex flex-col md:flex-row gap-12 min-h-[500px] border border-slate-100">
-          
-          {/* Levi deo - Logo i Rating */}
           <div className="flex flex-col items-center justify-center md:w-1/3 md:border-r border-slate-100 md:pr-12">
             <div className="h-32 w-full flex items-center justify-center mb-6">
                 <img src={current.logo} alt={current.name} className="max-h-full max-w-full object-contain" />
@@ -111,8 +105,6 @@ const CompanySlider = () => {
               </button>
             </div>
           </div>
-
-          {/* Desni deo - Stats, Tech i Benefits */}
           <div className="md:w-2/3 flex flex-col justify-center">
             <div className="flex gap-8 mb-10 text-base font-bold text-slate-400 uppercase tracking-widest">
               <span>{current.reviews} iskustvo</span>
@@ -143,8 +135,6 @@ const CompanySlider = () => {
             </div>
           </div>
         </div>
-
-        {/* Desna strelica */}
         <button 
           onClick={nextSlide}
           className="absolute right-[-20px] md:right-0 z-10 bg-emerald-400 p-3 rounded-full text-white hover:bg-emerald-500 transition-all shadow-lg hover:scale-110 active:scale-95"
@@ -153,7 +143,6 @@ const CompanySlider = () => {
         </button>
       </div>
 
-      {/* Mini navigacija (Logoi) - Thumbnail Slider */}
       <div className="flex justify-center flex-wrap gap-4 mt-16 max-w-4xl mx-auto px-4">
         {companies.map((comp, index) => (
           <button 

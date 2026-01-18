@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroVideo = () => {
   return (
-    <div className='relative w-full h-[65vh] bg-black overflow-hidden mt-[-1px]'>
+    <div className='relative w-full h-[75vh] bg-black overflow-hidden mt-[-1px]'>
         <video 
             autoPlay 
             loop 
@@ -20,7 +20,7 @@ const HeroVideo = () => {
             </h1>
             
             <p className='text-2xl md:text-3xl text-blue-500 font-bold'>
-                Jobzee je pravo mesto za vas.
+                Jobzee je pravo mesto za Vas
             </p>
             
             <button className='mt-10  text-white px-12 py-4 rounded-full font-bold text-xl hover:scale-110 transition-all shadow-2xl shadow-blue-500/50'>
